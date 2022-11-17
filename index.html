@@ -15,6 +15,15 @@
   <img src="gasto.png" alt="" srcset="">
   <img src="report.png" alt="" srcset="">
   <img src="client.png" alt="" srcset="">
-  
+  <script>
+    if('serviceWorker' in navigator){
+      navigator.serviceWorker
+        .register('/sw.js')
+        .then(reg => console.log("OK",reg))
+        .catch(err => console.log("Error",err))
+      //
+    }
+  </script>
 </body>
+  
 </html>
