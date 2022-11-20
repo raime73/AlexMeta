@@ -36,7 +36,7 @@ const coffees = [
    //  link: "objetivos.html"
   },
   {
-    name: "Mi Motor",
+    name: "Motivacion",
     image: "images/coffee8.jpg"
    //  link: "motiva.html"
   },
