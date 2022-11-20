@@ -1,39 +1,39 @@
 const container = document.querySelector(".container");
 const coffees = [
   {
-    name: "Perspiciatis",
+    name: "Ventas",
     image: "images/coffee1.jpg"
   },
   {
-    name: "Voluptatem",
+    name: "Gastos",
     image: "images/coffee2.jpg"
   },
   {
-    name: "Explicabo",
+    name: "Reportes",
     image: "images/coffee3.jpg"
   },
   {
-    name: "Rchitecto",
+    name: "Clientes",
     image: "images/coffee4.jpg"
   },
   {
-    name: " Beatae",
+    name: "Aprende",
     image: "images/coffee5.jpg"
   },
   {
-    name: " Vitae",
+    name: "Apoyo",
     image: "images/coffee6.jpg"
   },
   {
-    name: "Inventore",
+    name: "Objetivos",
     image: "images/coffee7.jpg"
   },
   {
-    name: "Veritatis",
+    name: "Mi Motor",
     image: "images/coffee8.jpg"
   },
   {
-    name: "Accusantium",
+    name: "Info",
     image: "images/coffee9.jpg"
   }
 ];
