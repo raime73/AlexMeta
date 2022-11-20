@@ -2,39 +2,48 @@ const container = document.querySelector(".container");
 const coffees = [
   {
     name: "Ventas",
-    image: "images/coffee1.jpg"
+    image: "images/ventas.jpg"
+    link: "ventas"
   },
   {
     name: "Gastos",
-    image: "images/coffee2.jpg"
+    image: "images/gastos.jpg"
+    link: "gastos"
   },
   {
     name: "Reportes",
-    image: "images/coffee3.jpg"
+    image: "images/reportes.jpg"
+    link: "reportes"
   },
   {
     name: "Clientes",
-    image: "images/coffee4.jpg"
+    image: "images/clientes.jpg"
+    link: "clientes"
   },
   {
     name: "Aprende",
-    image: "images/coffee5.jpg"
+    image: "images/aprende.jpg"
+    link: "aprende"
   },
   {
     name: "Apoyo",
-    image: "images/coffee6.jpg"
+    image: "images/apoyo.jpg"
+    link: "apoyo"
   },
   {
     name: "Objetivos",
-    image: "images/coffee7.jpg"
+    image: "images/lista.jpg"
+    link: "objetivos"
   },
   {
     name: "Mi Motor",
-    image: "images/coffee8.jpg"
+    image: "images/motiva.jpg"
+    link: "motiva"
   },
   {
     name: "Info",
-    image: "images/coffee9.jpg"
+    image: "images/acerca.jpg"
+    link: "about"
   }
 ];
 const showCoffees = () => {
@@ -45,7 +54,7 @@ const showCoffees = () => {
               <div class="card">
                 <img class="card--avatar" src=${image} />
                 <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#">IR</a>
+                <a class="card--link" href=link>IR</a>
               </div>
               `)
   );
