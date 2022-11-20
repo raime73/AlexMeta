@@ -3,47 +3,47 @@ const coffees = [
   {
     name: "Ventas",
     image: "images/ventas.jpg"
-    link: "ventas"
+    link: "ventas.html"
   },
   {
     name: "Gastos",
     image: "images/gastos.jpg"
-    link: "gastos"
+    link: "gastos.html"
   },
   {
     name: "Reportes",
     image: "images/reportes.jpg"
-    link: "reportes"
+    link: "reportes.html"
   },
   {
     name: "Clientes",
     image: "images/clientes.jpg"
-    link: "clientes"
+    link: "clientes.html"
   },
   {
     name: "Aprende",
     image: "images/aprende.jpg"
-    link: "aprende"
+    link: "aprende.html"
   },
   {
     name: "Apoyo",
     image: "images/apoyo.jpg"
-    link: "apoyo"
+    link: "apoyo.html"
   },
   {
     name: "Objetivos",
     image: "images/lista.jpg"
-    link: "objetivos"
+    link: "objetivos.html"
   },
   {
     name: "Mi Motor",
     image: "images/motiva.jpg"
-    link: "motiva"
+    link: "motiva.html"
   },
   {
     name: "Info",
     image: "images/acerca.jpg"
-    link: "about"
+    link: "about.html"
   }
 ];
 const showCoffees = () => {
