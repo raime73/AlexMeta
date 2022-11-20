@@ -2,59 +2,59 @@ const container = document.querySelector(".container");
 const coffees = [
   {
     name: "Ventas",
-    image: "images/coffee1.jpg"
-   //  link: "ventas.html"
+    image: "images/coffee1.jpg",
+    link: "Ventas/index.html"
   },
   {
     name: "Gastos",
-    image: "images/coffee2.jpg"
-  //  link: "gastos.html"
+    image: "images/coffee2.jpg",
+    link: "Gastos/index.html"
   },
   {
     name: "Reportes",
-    image: "images/coffee3.jpg"
-    // link: "reportes.html"
+    image: "images/coffee3.jpg",
+    link: "Reportes/index.html"
   },
   {
     name: "Clientes",
-    image: "images/coffee4.jpg"
-    // link: "clientes.html"
+    image: "images/coffee4.jpg",
+    link: "Clientes/index.html"
   },
   {
     name: "Aprende",
-    image: "images/coffee6.jpg"
-    // link: "aprende.html"
+    image: "images/coffee6.jpg",
+    link: "Aprende/index.html"
   },
   {
     name: "Apoyo",
-    image: "images/coffee7.jpg"
-    // link: "apoyo.html"
+    image: "images/coffee7.jpg",
+    link: "Apoyo/index.html"
   },
   {
     name: "Objetivos",
-    image: "images/coffee5.jpg"
-   //  link: "objetivos.html"
+    image: "images/coffee5.jpg",
+    link: "Objetivos/index.html"
   },
   {
     name: "Motivacion",
-    image: "images/coffee8.jpg"
-   //  link: "motiva.html"
+    image: "images/coffee8.jpg",
+    link: "Motivacion/index.html"
   },
   {
     name: "Info",
-    image: "images/coffee9.jpg"
-   //  link: "about.html"
+    image: "images/coffee9.jpg",
+    link: "Info/index.html"
   }
 ];
 const showCoffees = () => {
   let output = "";
   coffees.forEach(
-    ({ name, image}) =>
+    ({ name, image, link}) =>
       (output += `
               <div class="card">
                 <img class="card--avatar" src=${image} />
                 <h1 class="card--title">${name}</h1>
-                <a class="card--link" href=${name}".html">IR</a>
+                <a class="card--link" href=${link}>IR</a>
               </div>
               `)
   );
