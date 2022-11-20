@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-const myImages = [
+const myimg = [
   {
     name: "Ventas",
     image: "images/ventas.jpg"
@@ -12,27 +12,47 @@ const myImages = [
     name: "Reportes",
     image: "images/reportes.jpg"
   },
-  {
-    name: "clientes",
+    {
+    name: "Clientes",
     image: "images/clientes.jpg"
+  },
+  {
+    name: "Aprende",
+    image: "images/aprende.jpg"
+  },
+  {
+    name: "Apoyo",
+    image: "images/apoyo.jpg"
+  },
+  {
+    name: "Objetivos",
+    image: "images/lista.jpg"
+  },
+  {
+    name: "Mi Motor",
+    image: "images/motiva.jpg"
+  },
+  {
+    name: "Info",
+    image: "images/acerca.jpg"
   }
 ];
-const showMenu = () => {
+const showImages = () => {
   let output = "";
-  myImages.forEach(
+  myimg.forEach(
     ({ name, image }) =>
       (output += `
               <div class="card">
                 <img class="card--avatar" src=${image} />
                 <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#">Regresar</a>
+                <a class="card--link" href="#">Ir</a>
               </div>
               `)
   );
   container.innerHTML = output;
 };
 
-document.addEventListener("DOMContentLoaded", showMenu);
+document.addEventListener("DOMContentLoaded", showImages);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
