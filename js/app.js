@@ -3,49 +3,58 @@ const coffees = [
   {
     name: "Ventas",
     image: "images/coffee1.jpg"
+    link: "ventas.html"
   },
   {
     name: "Gastos",
     image: "images/coffee2.jpg"
+    link: "gastos.html"
   },
   {
     name: "Reportes",
     image: "images/coffee3.jpg"
+    link: "reportes.html"
   },
   {
     name: "Clientes",
     image: "images/coffee4.jpg"
+    link: "clientes.html"
   },
   {
     name: "Aprende",
-    image: "images/coffee5.jpg"
+    image: "images/coffee6.jpg"
+    link: "aprende.html"
   },
   {
     name: "Apoyo",
-    image: "images/coffee6.jpg"
+    image: "images/coffee7.jpg"
+    link: "apoyo.html"
   },
   {
     name: "Objetivos",
-    image: "images/coffee7.jpg"
+    image: "images/coffee5.jpg"
+    link: "objetivos.html"
   },
   {
     name: "Mi Motor",
     image: "images/coffee8.jpg"
+    link: "motiva.html"
   },
   {
     name: "Info",
     image: "images/coffee9.jpg"
+    link: "about.html"
   }
 ];
 const showCoffees = () => {
   let output = "";
   coffees.forEach(
-    ({ name, image }) =>
+    ({ name, image, link }) =>
       (output += `
               <div class="card">
                 <img class="card--avatar" src=${image} />
                 <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#">IR</a>
+                <a class="card--link" href=link>IR</a>
               </div>
               `)
   );
