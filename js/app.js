@@ -1,58 +1,58 @@
 const container = document.querySelector(".container");
-const myimg = [
+const coffees = [
   {
-    name: "Ventas",
-    image: "images/ventas.jpg"
+    name: "Perspiciatis",
+    image: "images/coffee1.jpg"
   },
   {
-    name: "Gastos",
-    image: "images/gastos.jpg"
+    name: "Voluptatem",
+    image: "images/coffee2.jpg"
   },
   {
-    name: "Reportes",
-    image: "images/reportes.jpg"
-  },
-    {
-    name: "Clientes",
-    image: "images/clientes.jpg"
+    name: "Explicabo",
+    image: "images/coffee3.jpg"
   },
   {
-    name: "Aprende",
-    image: "images/aprende.jpg"
+    name: "Rchitecto",
+    image: "images/coffee4.jpg"
   },
   {
-    name: "Apoyo",
-    image: "images/apoyo.jpg"
+    name: " Beatae",
+    image: "images/coffee5.jpg"
   },
   {
-    name: "Objetivos",
-    image: "images/lista.jpg"
+    name: " Vitae",
+    image: "images/coffee6.jpg"
   },
   {
-    name: "Mi Motor",
-    image: "images/motiva.jpg"
+    name: "Inventore",
+    image: "images/coffee7.jpg"
   },
   {
-    name: "Info",
-    image: "images/acerca.jpg"
+    name: "Veritatis",
+    image: "images/coffee8.jpg"
+  },
+  {
+    name: "Accusantium",
+    image: "images/coffee9.jpg"
   }
 ];
-const showImages = () => {
+const showCoffees = () => {
   let output = "";
-  myimg.forEach(
+  coffees.forEach(
     ({ name, image }) =>
       (output += `
               <div class="card">
                 <img class="card--avatar" src=${image} />
                 <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#">Ir</a>
+                <a class="card--link" href="#">Taste</a>
               </div>
               `)
   );
   container.innerHTML = output;
 };
 
-document.addEventListener("DOMContentLoaded", showImages);
+document.addEventListener("DOMContentLoaded", showCoffees);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
