@@ -36,9 +36,9 @@ const coffees = [
     link: "Objetivos/index.html"
   },
   {
-    name: "Motivacion",
+    name: "Motivos",
     image: "images/coffee8.jpg",
-    link: "Motivacion/index.html"
+    link: "Motivos/index.html"
   },
   {
     name: "Info",
