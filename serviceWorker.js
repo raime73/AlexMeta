@@ -1,4 +1,4 @@
-const staticDevCoffee = "META-site-v1";
+const staticDevCoffee = "MIPE-site-v2";
 const assets = [
   "/",
   "/index.html",
