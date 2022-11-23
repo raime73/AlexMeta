@@ -1,49 +1,49 @@
 const container = document.querySelector(".container");
 const coffees = [
   {
-    name: "Ventas",
-    image: "images/coffee1.jpg",
+    name: "Operaciones",
+    image: "images/opera.jpg",
     link: "Ventas/index.html"
   },
   {
-    name: "Gastos",
-    image: "images/coffee2.jpg",
-    link: "Gastos/index.html"
+    name: "Registro",
+    image: "images/registro.jpg",
+    link: "Registro/index.html"
   },
   {
     name: "Reportes",
-    image: "images/coffee3.jpg",
+    image: "images/reporte.jpg",
     link: "Reportes/index.html"
   },
   {
     name: "Clientes",
-    image: "images/coffee4.jpg",
+    image: "images/clientes.jpg",
     link: "Clientes/index.html"
   },
   {
-    name: "Aprende",
-    image: "images/coffee6.jpg",
-    link: "Aprende/index.html"
-  },
-  {
     name: "Apoyo",
-    image: "images/coffee7.jpg",
+    image: "images/apoyo.jpg",
     link: "Apoyo/index.html"
   },
   {
     name: "Objetivos",
-    image: "images/coffee5.jpg",
+    image: "images/objetivo.jpg",
     link: "Objetivos/index.html"
   },
   {
-    name: "Motivos",
-    image: "images/coffee8.jpg",
-    link: "Motivos/index.html"
+    name: "Mi motor",
+    image: "images/motivo.jpg",
+    link: "Motor/index.html"
   },
   {
     name: "Info",
-    image: "images/coffee9.jpg",
+    image: "images/info.jpg",
     link: "Info/index.html"
+  },
+  {
+    name: "Actualizar",
+    image: "images/actualiza.jpg",
+    link: "Actualiza/index.html"
   }
 ];
 const showCoffees = () => {
