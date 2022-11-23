@@ -33,7 +33,7 @@ const coffees = [
   {
     name: "Mi motor",
     image: "images/motivo.jpg",
-    link: "Motor/index.html"
+    link: "Motivos/index.html"
   },
   {
     name: "Info",
