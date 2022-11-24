@@ -72,7 +72,7 @@ function populateChart() {
       data: {
         labels,
         datasets: [{
-            label: "Total Over Time",
+            label: "Flujo de dinero",
             fill: true,
             backgroundColor: "#6666ff",
             data
