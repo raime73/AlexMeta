@@ -43,6 +43,31 @@ function populateTable() {
   });
 }
 
+function store(){ 
+    var key = randomNumberID(); 
+    var option = document.getElementById('transaction.option').value;
+    var name = document.getElementById('transaction.name').value;
+    var value = document.getElementById('transaction.value').value;
+    var date = document.getElementById('transaction.date').value;
+    
+
+    const register = {
+        key: key,  
+        option: option,
+        name: name,
+        value: value,
+        date: date
+    }
+
+    window.localStorage.setItem(key,JSON.stringify(register));  
+}
+
+
+//generate Id
+function randomNumberID() {
+  return Math.floor(Math.random() * (1000002 - 1 + 1)) + 1;
+}
+
 function populateChart() {
   // copy array and reverse it
   let reversed = transactions.slice().reverse();
@@ -158,4 +183,5 @@ function sendTransaction() {
 document.querySelector("#add-btn").onclick = function() {
   sendTransaction();
 };
+
 
