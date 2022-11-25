@@ -1,12 +1,17 @@
 const container = document.querySelector(".container");
 const coffees = [
   {
-    name: "Operaciones",
-    image: "images/opera.jpg",
-    link: "Opera/index.html"
+    name: "Ventas",
+    image: "images/ventas.jpg",
+    link: "Ingresos/index.html"
   },
   {
-    name: "Registro",
+    name: "Egresos",
+    image: "images/gastos.jpg",
+    link: "Gastos/index.html"
+  },
+  {
+    name: "Alta de productos",
     image: "images/registro.jpg",
     link: "Registro/index.html"
   },
@@ -31,14 +36,9 @@ const coffees = [
     link: "Objetivos/index.html"
   },
   {
-    name: "Mi motor",
+    name: "Mi Empresa",
     image: "images/motivo.jpg",
     link: "Motivos/index.html"
-  },
-  {
-    name: "Info",
-    image: "images/info.jpg",
-    link: "Info/index.html"
   },
   {
     name: "Actualizar",
