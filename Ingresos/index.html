@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#317EFB">
+  <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+
+  <title>Seguimiento de Operaciones</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="total">
+      <div class="total">Registro de Venta</div>
+    </div>
+      <button onclick="history.back()">Regresar</button>
+    <div>
+
+    </div>
+
+    <div class="form">
+      <input type="number" min="0" id="t-amount" placeholder="Cantidad" /><br>
+      <input type="number" min="0" id="t-price" placeholder="Precio Unitario"/><br>
+      <input type="number" min="0" id="t-extra" placeholder="Precio Extras"/><br>
+      <input type="number" min="0" id="t-deliver" placeholder="Precio Entrega"/><br>
+      <input type="text"  id="t-note" placeholder="Comentarios"/><br>
+      
+      <label for="t-name">Producto</label>
+            <select id="t-name" name="DropName">
+              <option value="No registrado">No registrado</option>
+              <option value="Pastel Zanahoria">Pastel Zanahoria </option>
+              <option value="Café">Café Colombiano</option>
+              <option value="Tortillas">Tortillas</option>
+              <option value="Pastel 3L">Pastel 3L</option>
+            </select><br>
+      <label for="t-client">Cliente</label>
+        <select id="t-client" name="DropClient">
+          <option value="No registrado">No registrado</option>
+          <option value="Sergio Casas">Sergio Casas</option>
+          <option value="Laura Campos">Laura Campos</option>
+          <option value="Claudia Mesa">Claudia Mesa</option>
+          <option value="Blanca Robles">Blanca Robles</option>
+          <option value="Gerardo Zapata">Gerardo Zapata</option>
+        </select>
+
+        
+        </div><br>
+      
+      
+      
+      <input type=button onclick="myFunction()" value='Guardar'>
+      <p class="error"></p>
+      
+    </div>
+    
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="index.js"></script>
+  
+  <script>
+    function myFunction() {
+      window.alert("Registro Guardado");
+      history.back();
+
+    }
+    </script>
+    
+    
+</body>
+</html>
