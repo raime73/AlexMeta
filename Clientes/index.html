@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#317EFB">
+  <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+
+  <title>Seguimiento de Operaciones</title>
+</head>
+<body>
+
+  
+  <div class="wrapper">
+    <div class="total">
+      <div class="total">Registro de Cliente</div>
+    </div>
+      <button onclick="history.back()">Regresar</button>
+    <div>
+
+    </div>
+
+    <div class="form">
+      <input type="text" id="t-amount" placeholder="Nombre" /><br>
+      <input type="text" id="t-price" placeholder="Apellido"/><br>
+      <input type="text" id="t-extra" placeholder="Télefono"/><br>
+      <input type="text" id="t-deliver" placeholder="Dirección"/><br>
+      <input type="text" id="t-note" placeholder="Comentarios" style="width: auto; height: 40px;"/><br>
+    
+        
+        </div><br>
+      
+      
+      
+      <input type=button onclick="myFunction()" value='Guardar'>
+      <p class="error"></p>
+      
+    </div>
+    
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="index.js"></script>
+  
+  <script>
+    function myFunction() {
+      window.alert("Registro Guardado");
+      history.back();
+
+    }
+    </script>
+    
+    
+</body>
+</html>
