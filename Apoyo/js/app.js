@@ -11,9 +11,9 @@ const coffees = [
     link: "instalaPC.pdf"
   },
   {
-    name: "Empresa y procesos",
+    name: "Carta de terminación",
     image: "images/docuApoyo.jpg",
-    link: "manual.pdf"
+    link: "carta.pdf"
   }, 
 ];
 const showCoffees = () => {
