@@ -1,0 +1,103 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    background-color: purple;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #6a0dad;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input, select, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #4a148c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: #7c43bd;
+}
+
+/*btn Uno*/
+
+.btn-1{
+    background: #039be5;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 100px;
+    margin-top: 20px;
+    align-self: center;
+    padding: 10px;
+    text-decoration: none;
+    position: relative; /* Importante: Agregamos position relative para que los pseudoelementos se posicionen respecto al botón */
+    display: inline-block; /* Agregamos display inline-block para que los pseudoelementos puedan tener dimensiones */
+}
+
+.btn-1::after, .btn-1::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #039be5;
+    border-radius: inherit;
+    width: 100%; /* Ajustamos la anchura al 100% del botón */
+    height: 100%; /* Ajustamos la altura al 100% del botón */
+    top: 0; /* Ajustamos la posición inicial de top a 0 */
+    left: 0; /* Ajustamos la posición inicial de left a 0 */
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-1:hover{
+    transform: translate(-12px, -12px);
+}
+
+.btn-1:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.btn-1:hover::before{
+    transform: translate(12px, 12px);
+}
