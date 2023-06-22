@@ -1,77 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#317EFB">
-  <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Captura de Ventas</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="buttons.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Captura de Ventas</h1>
+                <a href="index.html" class="btn-back">Volver</a>
+            </header>
+            
+            <form id="ventaForm" class="form">
+                <label for="productoSelect">Producto:</label>
+                <select id="productoSelect" required></select>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="manifest" href="manifest.json">
+                <label for="clienteSelect">Cliente:</label>
+                <select id="clienteSelect" required></select>
 
-  <title>Seguimiento de Operaciones</title>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="total">
-      <div class="total">Registro de Venta</div>
-    </div>
-      <button onclick="history.back()">Regresar</button>
-    <div>
+                <label for="precioUnitario">Precio Unitario:</label>
+                <input type="number" id="precioUnitario" step="0.01" required>
 
-    </div>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" required>
 
-    <div class="form">
-      <input type="number" min="0" id="t-amount" placeholder="Cantidad" /><br>
-      <input type="number" min="0" id="t-price" placeholder="Precio Unitario"/><br>
-      <input type="number" min="0" id="t-extra" placeholder="Precio Extras"/><br>
-      <input type="number" min="0" id="t-deliver" placeholder="Precio Entrega"/><br>
-      <input type="text"  id="t-note" placeholder="Comentarios"/><br>
-      
-      <label for="t-name">Producto</label>
-            <select id="t-name" name="DropName">
-              <option value="No registrado">No registrado</option>
-              <option value="Pastel Zanahoria">Pastel Zanahoria </option>
-              <option value="Café">Café Colombiano</option>
-              <option value="Tortillas">Tortillas</option>
-              <option value="Pastel 3L">Pastel 3L</option>
-            </select><br>
-      <label for="t-client">Cliente</label>
-        <select id="t-client" name="DropClient">
-          <option value="No registrado">No registrado</option>
-          <option value="Sergio Casas">Sergio Casas</option>
-          <option value="Laura Campos">Laura Campos</option>
-          <option value="Claudia Mesa">Claudia Mesa</option>
-          <option value="Blanca Robles">Blanca Robles</option>
-          <option value="Gerardo Zapata">Gerardo Zapata</option>
-        </select>
+                <label for="costoExtras">Costo Extras:</label>
+                <input type="number" id="costoExtras" step="0.01">
 
-        
-        </div><br>
-      
-      
-      
-      <input type=button onclick="myFunction()" value='Guardar'>
-      <p class="error"></p>
-      
-    </div>
-    
-    <canvas id="myChart"></canvas>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="index.js"></script>
-  
-  <script>
-    function myFunction() {
-      window.alert("Registro Guardado");
-      history.back();
+                <label for="costoEntrega">Costo de Entrega:</label>
+                <input type="number" id="costoEntrega" step="0.01" placeholder="Zona" required>
 
-    }
-    </script>
-    
-    
-</body>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" rows="3"></textarea>
+
+                <label for="total">Total:</label>
+                <span id="total">0.00</span>
+
+                <button type="submit" class="btn btn-1">Guardar</button>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
 </html>
