@@ -1,66 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#317EFB">
-  <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-
-  <title>Registro de elementos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/buttons.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="total">
-      <div class="total">Registro General</span></div>
-      <button onclick="history.back()">Regresar</button>
-    </div>
-    
+    <div class="container">
+        <header>
+            <h1>Gestión de Productos</h1>
+            <a href="../index.html" class="btn-back">Regresar</a>
+        </header>
 
-    <div class="form">
+        <section>
+            <label for="operation">Operación:</label>
+            <select id="operation">
+                <option value="" disabled selected>Selecciona una operación</option>
+                <option value="alta">Alta de Producto</option>
+                <option value="baja">Baja de Producto</option>
+                <option value="consulta">Consulta de Productos</option>
+            </select>
+        </section>
 
-      <p>Seleccione el tipo de operación:</p>
-        
-        <input type="radio" name = "Roption" onclick="myFunction(this.value)" value="Ingreso">Ingreso 
-        <input type="radio" name = "Roption" onclick="myFunction(this.value)" value="Egreso">Egreso<br>
-
-      <input type="text" id="t-option">
-      <input type="text" id="t-name" placeholder="Descripción" />
-      <input type="text" id="t-amount" placeholder="Unidades" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Guardar</button>
-      <p class="error"></p>
-      
+        <section id="formContainer"></section>
     </div>
 
-    <div class="transactions">
-      <table>
-        <thead>
-          <th>Tipo</th>
-          <th>Descripción</th>
-          <th>Unidades</th>
-          <th>Fecha</th>
-
-        </thead>
-        <tbody id="tbody">
-          
-        </tbody>
-      </table>
-    </div>
-    
-    <canvas id="myChart"></canvas>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="index.js"></script>
-  <script>
-    function myFunction(Roption) {
-      document.getElementById("t-option").value = Roption;
-      document.getElementById("t-name").value = "";
-      document.getElementById("t-amount").value = "";
-    }
-    </script>  
+    <script src="../js/loadData.js"></script>
 </body>
 </html>
