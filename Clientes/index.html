@@ -1,61 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#317EFB">
-  <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="manifest" href="manifest.json">
-
-  <title>Seguimiento de Operaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/buttons.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Gestión de Clientes</h1>
+            <a href="index.html" class="btn-back">Regresar</a>
+        </header>
 
-  
-  <div class="wrapper">
-    <div class="total">
-      <div class="total">Registro de Cliente</div>
+        <section>
+            <label for="operation">Operación:</label>
+            <select id="operation">
+                <option value="" disabled selected>Selecciona una operación</option>
+                <option value="alta">Alta de Cliente</option>
+                <option value="baja">Baja de Cliente</option>
+                <option value="consulta">Consulta de Cliente</option>
+            </select>
+        </section>
+
+        <section id="formContainer"></section>
     </div>
-      <button onclick="history.back()">Regresar</button>
-    <div>
 
-    </div>
-
-    <div class="form">
-      <input type="text" id="t-amount" placeholder="Nombre" /><br>
-      <input type="text" id="t-price" placeholder="Apellido"/><br>
-      <input type="text" id="t-extra" placeholder="Télefono"/><br>
-      <input type="text" id="t-deliver" placeholder="Dirección"/><br>
-      <input type="text" id="t-note" placeholder="Comentarios" style="width: auto; height: 40px;"/><br>
-    
-        
-        </div><br>
-      
-      
-      
-      <input type=button onclick="myFunction()" value='Guardar'>
-      <p class="error"></p>
-      
-    </div>
-    
-    <canvas id="myChart"></canvas>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="index.js"></script>
-  
-  <script>
-    function myFunction() {
-      window.alert("Registro Guardado");
-      history.back();
-
-    }
-    </script>
-    
-    
+    <script src="../js/loadDataClients.js"></script>
 </body>
 </html>
