@@ -16,12 +16,12 @@ const coffees = [
     link: "Registro/index.html"
   },
   {
-    name: "Reportes Ventas",
+    name: "Reporte Ventas",
     image: "images/reporte.jpg",
     link: "Reportes/index.html"
   },
   {
-    name: "Reportes Egresos",
+    name: "Reporte Egresos",
     image: "images/reporteg.jpg",
     link: "RepoGastos/index.html"
   },
