@@ -1,65 +1,40 @@
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#317EFB">
-  <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Captura de Gastos</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/buttons.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Captura de Gastos</h1>
+                <a href="index.html" class="btn-back">Volver</a>
+            </header>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="manifest" href="manifest.json">
+            <form id="gastoForm" class="form">
+                <select id="tipoGastos" required>
+                    <option value="MateriaPrima">Materia Prima</option>
+                    <option value="Operacion">Operación</option>
+                    <option value="Nomina">Nómina</option>
+                    <option value="Publicidad">Publicidad</option>
+                    <option value="Otro">Otro</option>
+                </select>
 
-  <title>Egresos</title>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="total">
-      <div class="total">Registro de Gastos</div>
-    </div>
-      <button onclick="history.back()">Regresar</button>
-    <div>
+                <label for="cantidadGasto">Cantidad:</label>
+                <input type="number" id="cantidadGasto" step="0.01" required>
 
-    </div>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" rows="3"></textarea>
 
-    <div class="form">
-      <label for="t-name">Egreso</label>
-      <select id="t-name" name="DropName">
-        <option value="No registrado">No registrado</option>
-        <option value="Materia Prima">Materia Prima</option>
-        <option value="Transporte">Transporte</option>
-        <option value="Servicios">Servicios</option>
-        <option value="Renta">Renta</option>
-      </select><br>
-      <input type="number" min="0" id="t-amount" placeholder="Monto" /><br><br>
-      <input type="text"  id="t-note" placeholder="Comentarios" style="width: auto; height: 40px;"><br>
-      
-    <br><br><br>
-
-        </div><br>
-      
-      
-      
-      <input type=button onclick="myFunction()" value='Guardar'>
-      <p class="error"></p>
-      
-    </div>
-    
-    <canvas id="myChart"></canvas>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="index.js"></script>
-  
-  <script>
-    function myFunction() {
-      window.alert("Registro Guardado");
-      history.back();
-
-    }
-    </script>
-    
-    
-</body>
+                <button type="submit" class="btn btn-1">Guardar</button>
+            </form>
+        </div>
+        <script src="../js/mainExpense.js"></script>
+    </body>
 </html>
