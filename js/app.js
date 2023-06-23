@@ -16,9 +16,14 @@ const coffees = [
     link: "Registro/index.html"
   },
   {
-    name: "Reportes",
+    name: "Reportes Ventas",
     image: "images/reporte.jpg",
     link: "Reportes/index.html"
+  },
+  {
+    name: "Reportes Egresos",
+    image: "images/reporteg.jpg",
+    link: "RepoGastos/index.html"
   },
   {
     name: "Clientes",
@@ -34,11 +39,6 @@ const coffees = [
     name: "Objetivos",
     image: "images/objetivo.jpg",
     link: "Objetivos/index.html"
-  },
-  {
-    name: "Mi Empresa",
-    image: "images/motivo.jpg",
-    link: "Motivos/index.html"
   },
   {
     name: "Actualizar",
